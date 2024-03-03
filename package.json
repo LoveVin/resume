@@ -2,7 +2,7 @@
   "name": "resume",
   "scripts": {
     "dev": "parcel src/index.html --open",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html --public-url ./"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",

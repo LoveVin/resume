@@ -101,8 +101,11 @@
         }
     </style>
     <style>
-        .practice{
-
+        .practice .practice-project {
+            margin: 10px 0;
+        }
+        .practice .practice-project-item {
+            margin-bottom: 15px;
         }
         .practice ul{
             list-style: none;
@@ -138,7 +141,7 @@
             color: #0078b9;
         }
 
-        .projects p strong{
+        strong{
             color: #0078b9;
             color: #097494;
         }
@@ -230,7 +233,7 @@
             <h1>李晓楠</h1>
             <img src="./imgs/photo1.jpg" alt="我的照片">
             <p>
-                女 | 22岁 | 前端开发工程师
+                女 | 26岁 | 前端开发工程师
             </p>
             <p class="contact">
                 <a href="tel:15893264573">电话：15893264573 | &nbsp;</a> 
@@ -244,7 +247,7 @@
             <p>
                 <h3>
                     2016年~2020年 &nbsp
-                    三峡大学（本科）&nbsp
+                    三峡大学（一本）&nbsp
                     计算机与信息学院 &nbsp 数字媒体技术
                 </h3>
                 <ul>
@@ -290,14 +293,40 @@
         </section>
         
         <section class="practice">
-            <h2>实习经历</h2>
+            <h2>工作经历</h2>
             
             <ul>
                 <li>
-                    <h3>中软国际有限公司 <span> java网站开发实习生</span> <span>2019年7月~2019年9月</span></h3>
-                    <p>
-                        在中软国际有限公司实习的这两个月，主要负责网站的后端开发，数据库的创建和增删改查，处理ajax请求等。使用的是 java 语言和 mvc+mybatis 框架结构。在此次的实习过程中，自己对网站的前后端整个开发流程有了更深刻的了解和掌握。
-                    </p>
+                    <h3>赞同科技股份有限公司（研究院） 
+                        <span>前端开发工程师</span>
+                        <span>2020年9月～至今</span>
+                    </h3>
+                    <p class="practice-project">工作项目</p>
+                    <section class="practice-project-item">
+                        <h4>1. 公司内部组件库和 sdk </h4>
+                        <p>
+                            负责维护、更新和发布公司生产的 web、移动 两套组件库（基于 <strong>vue2</strong> ）以及前端工程中常用的 sdk 库（使用 <strong>typescript</strong> 开发）。<br>
+                            及时修复用户使用过程中的 bug，根据新的需求新增和更改组件。<br>
+                            负责新 sdk 的开发，和对某些常用的 sdk 进行源代码的 <strong>重构</strong>，梳理功能，以更优的方式和逻辑重写。
+                        </p>                        
+                    </section>
+                    <section class="practice-project-item">
+                        <h4>2. 公司内部开发资源门户网站</h4>
+                        <p>
+                            参与公司内部开发资源门户网站的建设和发布，网站前端使用 <strong>vue3 + typescript</strong> 开发页面，
+                            使用 <strong>vue router</strong> 做路由控制，后端使用 <strong>nestjs + typescript</strong> 开发，使用 <strong>apollo + graphql</strong> 管理数据请求和响应。<br>
+                            主要负责前端页面的开发，也会参与后端权限控制、请求处理、增删库表等功能的开发。
+                        </p>
+                    </section>
+                    <section>
+                        <h4>3. 脚手架和微前端</h4>
+                        <p>
+                            作为公司前端核心研发人员，参与公司自研脚手架工具（类似 <strong>vue-cli / umjs</strong> 等）从0到1的研发工作。<br>
+                            并在组内做过微前端相关的 <strong>技术分享</strong>，获得同事和领导的一致好评。<br>
+                            脚手架使用 <strong>插件化</strong> 开发的方式迭代和更新，独立负责微前端插件的开发和更新。<br>
+                            微前端插件集成了 <strong>qiankun</strong>，但在 qiankun 的基础上做了延伸，弥补 qiankun 的不足以及拓展更多的功能，比如 <strong>web component</strong> 加载和页面缓存等。
+                        </p>
+                    </section>
                 </li>
             </ul>
             
@@ -308,7 +337,46 @@
             <ol>
                 <li>
                     <header>
-                        <h3>萌柴记账(Vue本地版)</h3>
+                        <h3>chaiui-vue3（Vue3 版本）</h3>
+                        <span>
+                            <a href="javascript:void(0)">源码私有</a>
+                            <a href="http://lovevin.gitee.io/chaiui-vue3-website" target="_blank">项目预览</a>
+                        </span>
+                    </header>
+                    <hr>
+                    <main>
+                        <p>
+                            一款自行研发的基于 <strong>Vue3 / TypeScript</strong> 的 UI 组件库。<br>
+                            该项目是我为了快速熟悉 vue3 的使用而开发的项目实践。<br>
+                            使用 vue3 官网推荐的 <strong>Vite</strong> 进行项目环境的搭建。<br>
+                            文档网站使用 <strong>marked.js</strong> 和 <strong>prism.js</strong> 渲染 md 文件，并做了<strong>移动端适配</strong>。<br>
+                            所有组件都是尽量使用原生 html + css 开发，减少三方库的依赖，以便有更好的兼容性。
+                        </p>
+                        <img src="./imgs/chaiui-vue3.png" alt="chaiui-vue3">
+                    </main>
+                </li>
+                <!-- <li>
+                    <header>
+                        <h3>chaiui-react</h3>
+                        <span>
+                            <a href="javascript:void(0)">源码私有</a>
+                            <a href="" target="_blank">项目预览</a>
+                        </span>
+                    </header>
+                    <hr>
+                    <main>
+                        <p>
+                            一款自行研发的基于 <strong>react / typescript</strong> 的 UI 组件库。<br>
+                            该项目是在很久没有使用过 react 开发，为了捡起 react 的知识而开发的项目实践。<br>
+                            随着 react 版本的更新，在开发过程中更新了 react 相关的知识。<br>
+                            使用
+                        </p>
+                        <img src="./imgs/chaiui-react.png" alt="chaiui-react">
+                    </main>
+                </li> -->
+                <li>
+                    <header>
+                        <h3>萌柴记账（Vue2 本地版）</h3>
                         <span>
                             <a href="javascript:void(0)">源码私有</a>
                             <a href="http://lovevin.gitee.io/billkeeping-vue-website" target="_blank">项目预览</a>
@@ -320,7 +388,7 @@
 
                     <main>
                         <p>
-                            一款基于 <strong>Vue</strong> / <strong>TypeScript</strong> 的移动端单页面应用。<br>
+                            一款基于 <strong>Vue2</strong> / <strong>TypeScript</strong> 的移动端单页面应用。<br>
                             该项目使用了 <strong>Vue全家桶</strong> 技术，是我自学 Vue 时的项目实践，<br>
                             使用 <strong>Vue CLI</strong> 进行项目环境的搭建，使用 <strong>Vuex</strong> 进行数据管理。 <br>
                             让我对 Vue 有了更深刻的理解和掌握。
@@ -332,7 +400,7 @@
                 </li>
                 <li>
                     <header>
-                        <h3>萌柴记账(React本地版)</h3>
+                        <h3>萌柴记账（React 本地版）</h3>
                         <span>
                             <a href="javascript:void(0)">源码私有</a>
                             <a href="https://lovevin.gitee.io/billkeeping-react-website" target="_blank">项目预览</a>
@@ -356,7 +424,7 @@
                 </li>
                 <li>
                     <header>
-                        <h3>萌柴翻译(小程序版)</h3>
+                        <h3>萌柴翻译（微信小程序版）</h3>
                         <span>
                             <a href="javascript:void(0)">源码私有</a>
                             <a href="javascript:void(0)">扫码预览</a>
@@ -378,7 +446,7 @@
                 </li>
                 <li>
                     <header>
-                        <h3>NAV主页(原生JS版)</h3>
+                        <h3>NAV主页（原生 JS 版）</h3>
                         <span>
                             <a href="https://gitee.com/lovevin/nav_home_page" target="_blank">源码链接</a>
                             <a href="http://lovevin.gitee.io/nav_home_page" target="_blank">项目预览</a>
@@ -488,8 +556,9 @@
                 </li>
                 <li>
                     <h3>Vue 框架</h3>
+                    <p><strong>Vue2 和 Vue3 均了解并有过项目实践。</strong></p>
                     <p>
-                        了解 <strong>Vue</strong>常用功能，掌握 <strong>Vue组件</strong>、<strong>数据响应式</strong>、<strong>生命周期钩子</strong>、<strong>Vue Router</strong> 等相关知识，熟悉Vue完整版和非完整版的区别，以及 <strong>@vue/cli</strong> 的使用。使用 Vue 做过项目，会使用 <strong>Vuex</strong> 进行数据管理。
+                        了解 <strong>Vue</strong>常用功能，掌握 <strong>Vue组件</strong>、<strong>数据响应式</strong>、<strong>生命周期钩子</strong>、<strong>Vue Router</strong> 等相关知识，使用过 <strong>Vuex</strong>、<strong>Pinia</strong> 进行数据管理，熟悉 <strong>@vue/cli</strong>、<strong>Vite</strong> 等工具的使用。
                     </p>
                 </li>
                 <li>
@@ -497,11 +566,27 @@
                     <p>
                         熟悉 <strong>React</strong> 常用功能，掌握 React <strong>函数组件</strong> 和 <strong>类组件</strong> 的使用方法，可以灵活使用 <strong>JSX</strong> 语法。熟悉 <strong>React Hooks</strong> 原理，并有用过 <strong>自定义Hook</strong>。有 React 相关的项目实践经验，熟悉 <strong>React全家桶</strong> 工具，如 <strong>React Router</strong>、<strong>Redux</strong> 、<strong>Create React App</strong> 等。
                     </p>
+                    <p>使用过 React 推荐的 <strong>nextjs</strong> 全栈框架搭建 react 工程。</p>
                 </li>
                 <li>
                     <h3>项目打包</h3>
                     <p>
                         对于小型项目，有使用过 <strong>parcel</strong> 打包工具。对于大型项目，有 <strong>webpack</strong> 打包经验，熟悉 <strong>webpack config</strong> 配置流程，了解其使用的管理资源的方法，如 <strong>file- loader</strong> 、<strong>css-loader</strong>、<strong>import 懒加载</strong> 等。
+                        对于其他项目使用过 <strong>rollup</strong> 打包工具，熟悉 rollup 的配置，以及根据需求写过 rollup 插件。
+                    </p>
+                </li>
+                <li>
+                    <h3>微前端</h3>
+                    <p>
+                        熟悉 <strong>single-spa</strong>、 <strong>qiankun</strong> 等微前端框架的使用及其原理，调研过 <strong>wujie</strong>、<strong>micro-app</strong>、<strong>garfish</strong> 等微前端框架，
+                        解决过微前端使用过程中的很多问题。
+                    </p>
+                </li>
+                <li>
+                    <h3>后端和全栈</h3>
+                    <p>
+                        了解 <strong>nodejs</strong> 的使用。用 nodejs 结合 <strong>commander.js</strong> 等三方库开发过命令行工具，也用 node 结合 <strong>express</strong> 等库搭建过静态服务器。
+                        使用 <strong>nginx</strong> 部署过网站，学习过 <strong>docker</strong> 容器的使用，偶尔会在 docker 中做各种测试。
                     </p>
                 </li>
             </ul>
@@ -511,16 +596,11 @@
             <h2>其他链接</h2>
             
             <div>
-                <h3>技术博客 &nbsp;&nbsp;<span>记录前端学习笔记，已有几十篇文章，并在持续更新</span> </h3>
+                <h3>技术博客 &nbsp;&nbsp;<span>记录前端学习笔记，已有200篇文章，并在持续更新</span> </h3>
                     <ul>
                         <li>
                             <strong>
-                                <a href="https://www.yuque.com/lovevin/vxlga1">语雀</a>
-                            </strong>
-                        </li>
-                        <li>
-                            <strong>
-                                <a href="https://www.cnblogs.com/lovevin/">博客园</a>
+                                <a href="https://www.yuque.com/lovevin/vxlga1" target="_blank">语雀</a>
                             </strong>
                         </li>
                     </ul>
@@ -531,12 +611,12 @@
                     <ul>
                         <li>
                             <strong>
-                                <a href="https://github.com/LoveVin">GitHub</a>
+                                <a href="https://github.com/LoveVin" target="_blank">GitHub</a>
                             </strong>
                         </li>
                         <li>
                             <strong>
-                                <a href="https://gitee.com/lovevin">码云</a>
+                                <a href="https://gitee.com/lovevin" target="_blank">码云</a>
                             </strong>
                         </li>
                     </ul>

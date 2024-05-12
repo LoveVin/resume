@@ -1,8 +1,8 @@
 {
   "name": "resume",
   "scripts": {
-    "dev": "rm -rf dist && parcel src/index.html --open",
-    "build": "rm -rf dist && parcel build src/index.html --public-url ./"
+    "dev": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --public-url ./"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",

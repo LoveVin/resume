@@ -2,236 +2,234 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的简历</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+    <style>* {
+  box-sizing: border-box;
+}
 
-        body {
-            background: #eee;
-            margin: 20px 0;
-            line-height: 1.5em;
-            font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
-        }
+body {
+  background: #eee;
+  margin: 20px 0;
+  font-family: -apple-system, Noto Sans, Helvetica Neue, Helvetica, Nimbus Sans L, Arial, Liberation Sans, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, Source Han Sans CN, Microsoft YaHei, Wenquanyi Micro Hei, WenQuanYi Zen Hei, ST Heiti, SimHei, WenQuanYi Zen Hei Sharp, sans-serif;
+  line-height: 1.5em;
+}
 
-        article {
-            width: 21cm;
-            min-height: 29.7cm;
-            /*A4纸的标准尺寸*/
-            background: white;
-            margin: 0 auto;
-            overflow: auto;
-            padding: 1em;
-        }
+article {
+  background: #fff;
+  width: 21cm;
+  min-height: 29.7cm;
+  margin: 0 auto;
+  padding: 1em;
+  overflow: auto;
+}
 
-        h2{
-            margin: 16px 0;
-            background: #097494;
-            color: white;
-            padding: 8px 5px;
-        }
+h2 {
+  color: #fff;
+  background: #097494;
+  margin: 16px 0;
+  padding: 8px 5px;
+}
 
-        h3,
-        h4,
-        h5,
-        h6 {
-            margin: 0;
-        }
+h3, h4, h5, h6 {
+  margin: 0;
+}
 
-        ol {
-            list-style: none;
-        }
+ol {
+  list-style: none;
+}
 
-        ul {
-            margin: 0;
-            padding-left: 18px;
-        }
+ul {
+  margin: 0;
+  padding-left: 18px;
+}
 
-        a{
-            text-decoration: none;
-        }
+a {
+  text-decoration: none;
+}
 
-        p {
-            margin: .3em 0;
-        }
+p {
+  margin: .3em 0;
+}
 
-        h1 {
-            font-size: 26px;
-            margin-top: 0;
-            margin-bottom: 16px;
-        }
+h1 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 26px;
+}
+</style>
+    <style media="print">body {
+  margin: 0;
+}
 
-    </style>
-    <style media="print">
-        body {
-            margin: 0;
-        }
-        article{
-            padding: 0;
-        }
-    </style>
-    <style>
-        
-        .bio {
-            position: relative;
-            margin-top: 20px;
-        }
+article {
+  padding: 0;
+}
+</style>
+    <style>.bio {
+  margin-top: 20px;
+  position: relative;
+}
 
-        .bio img {
-            position: absolute;
-            right: 0;
-            top: -10px; 
-            width: 100px;
-        }
-        .bio .contact{
-            display: flex;
-        }
-        .bio a{
-            color: inherit;
-        }
-    </style>
-    <style>
-        .education li {
-            color: #666;
-        }
-    </style>
-    <style>
-        .practice .practice-project {
-            margin: 10px 0;
-        }
-        .practice .practice-project-item {
-            margin-bottom: 15px;
-        }
-        .practice ul{
-            list-style: none;
-            padding-left: 0;
-        }
-        .practice p{
-            color: #666;
-        }
-        .practice h3{
-            display: flex;
-        }
-        .practice h3 > span{
-            color: #666;
-            font-weight: normal;
-            margin-left: 15px;
-        }
-        .practice h3 > span:last-child{
-            margin-left: auto;
-        }
-    </style>
-    <style>
-        .projects {}
+.bio img {
+  width: 100px;
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
 
-        .projects p,a {
-            color: #666;
-        }
+.bio .contact {
+  display: flex;
+}
 
-        .projects a{
-            border-bottom: 1px solid #666;
-        }
+.bio a {
+  color: inherit;
+}
+</style>
+    <style>.education li {
+  color: #666;
+}
+</style>
+    <style>.practice .practice-project {
+  margin: 10px 0;
+}
 
-        .projects a:hover{
-            color: #0078b9;
-        }
+.practice .practice-project-item {
+  margin-bottom: 15px;
+}
 
-        strong{
-            color: #0078b9;
-            color: #097494;
-        }
+.practice ul {
+  padding-left: 0;
+  list-style: none;
+}
 
-        .projects>ol {
-            list-style-position: inside;
-            padding: 0;
-        }
+.practice p {
+  color: #666;
+}
 
-        .projects>ol>li {
-            margin-bottom: 16px;
-        }
+.practice h3 {
+  display: flex;
+}
 
-        .projects>ol>li>header {
-            display: flex;
-            justify-content: space-between;
-        }
+.practice h3 > span {
+  color: #666;
+  margin-left: 15px;
+  font-weight: normal;
+}
 
-        .projects>ol>li>header>h3 {
-            display: inline-block;
-        }
+.practice h3 > span:last-child {
+  margin-left: auto;
+}
+</style>
+    <style>.projects p, a {
+  color: #666;
+}
 
-        .projects main{
-            position: relative;
-        }
-        .projects img{
-            position: absolute;
-            right: 15px;
-            top: 0;
-            width: 100px;
-            /*border: 1px solid #ffaf3e;*/
-        }
-        .projects hr{
-            border: none;
-            height: 1px;
-            background-color: #999;
-        }
-    </style>
-    <style>
-        .skills ul p{
-            color: #666;
-        }
-        .skills p strong{
-            color: #097494;
-        }
-    </style>
-    <style>
-        .others strong a{
-            color: #097494;
-        }
-        .others h3 span{
-            font-weight: normal;
-            color: #666;
-        }
-    </style>
-    <style>
-        @media (max-width: 500px){
-            article{
-                width: auto;
-                height: auto;
-            }
-            body{
-                margin: 0;
-            }
-            .bio .contact{
-                flex-direction: column;
-            }
-            .projects img{
-                display: none;
-            }
-            .practice h3{
-                flex-direction: column;
-            }
-            .practice h3 > span{
-                margin: 0;
-                padding: 0;
-            }
-            .practice h3 > span:last-child{
-                margin-left: 0;
-                /*page-break-before: always;*/
-            }
-        }
-    </style>
+.projects a {
+  border-bottom: 1px solid #666;
+}
+
+.projects a:hover {
+  color: #0078b9;
+}
+
+strong {
+  color: #097494;
+}
+
+.projects > ol {
+  padding: 0;
+  list-style-position: inside;
+}
+
+.projects > ol > li {
+  margin-bottom: 16px;
+}
+
+.projects > ol > li > header {
+  justify-content: space-between;
+  display: flex;
+}
+
+.projects > ol > li > header > h3 {
+  display: inline-block;
+}
+
+.projects main {
+  position: relative;
+}
+
+.projects img {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.projects hr {
+  background-color: #999;
+  border: none;
+  height: 1px;
+}
+</style>
+    <style>.skills ul p {
+  color: #666;
+}
+
+.skills p strong {
+  color: #097494;
+}
+</style>
+    <style>.others strong a {
+  color: #097494;
+}
+
+.others h3 span {
+  color: #666;
+  font-weight: normal;
+}
+</style>
+    <style>@media (width <= 500px) {
+  article {
+    width: auto;
+    height: auto;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .bio .contact {
+    flex-direction: column;
+  }
+
+  .projects img {
+    display: none;
+  }
+
+  .practice h3 {
+    flex-direction: column;
+  }
+
+  .practice h3 > span {
+    margin: 0;
+    padding: 0;
+  }
+
+  .practice h3 > span:last-child {
+    margin-left: 0;
+  }
+}
+</style>
 </head>
 
 <body>
     <article>
         <section class="bio">
             <h1>李晓楠</h1>
-            <img src="./imgs/photo1.jpg" alt="我的照片">
+            <img src="/photo1.861edea6.jpg" alt="我的照片">
             <p>
                 女 | 26岁 | 前端开发工程师
             </p>
@@ -245,7 +243,7 @@
         <section class="education">
             <h2>教育经历</h2>
             <p>
-                <h3>
+                </p><h3>
                     2016年~2020年 &nbsp
                     三峡大学（一本）&nbsp
                     计算机与信息学院 &nbsp 数字媒体技术
@@ -278,7 +276,7 @@
                         <p>
                             第12届中国大学生计算机设计大赛<strong>国家级三等奖和省级二等奖</strong>
                         </p>
-                    <li>
+                    </li><li>
                         <p>
                             2019年美国大学生数学建模竞赛国家级三等奖
                         </p>
@@ -294,7 +292,7 @@
                         </p>
                     </li>
                 </ul>
-            </p>
+            <p></p>
         </section>
         
         <section class="practice">
@@ -320,7 +318,7 @@
                         <h4>2. nodejs 脚手架工具和 UI 模版</h4>
                         <p>
                             作为公司前端核心研发人员，参与公司自研脚手架工具（类似 <strong>vue-cli / umjs</strong> 等）从0到1的研发工作。<br>
-                            负责使用 <strong>nodejs</strong> 开发命令行创建应用模版的脚手架工具，使用 <strong>fs</strong>、<strong>path</strong> 等 node 模块做文件读取和 <strong>commander</strong> 、<strong>prompts</strong> 等 node 工具做用户输入交互。提供 create、config、publish 等功能。<br/>
+                            负责使用 <strong>nodejs</strong> 开发命令行创建应用模版的脚手架工具，使用 <strong>fs</strong>、<strong>path</strong> 等 node 模块做文件读取和 <strong>commander</strong> 、<strong>prompts</strong> 等 node 工具做用户输入交互。提供 create、config、publish 等功能。<br>
                             负责根据 UI 设计师的原型图开发前端工程模版页面和创建命令的 UI 界面。
                         </p>
                     </section>
@@ -719,7 +717,7 @@
 
         </section>
     </article>
-    <script src="./main.js"></script>
-</body>
+    <script src="/index.de158e3a.js"></script>
+<script src="/resume.59712999.js"></script></body>
 
 </html>

@@ -2,7 +2,8 @@
   "name": "resume",
   "scripts": {
     "dev": "parcel src/index.html --open",
-    "build": "parcel build src/index.html --dist-dir docs --public-url ./"
+    "clean": "rm -rf .parcel-cache docs",
+    "build": "npm run clean && parcel build src/index.html --dist-dir docs --public-url ./"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",

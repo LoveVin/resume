@@ -1,9 +1,13 @@
 {
   "name": "resume",
   "scripts": {
-    "dev": "parcel src/index.html --open",
-    "clean": "rm -rf .parcel-cache docs",
-    "build": "npm run clean && parcel build src/index.html --dist-dir docs --public-url ./"
+    "dev": "npm run dev:fullstack",
+    "dev:fullstack": "parcel src/fullstack.html --open",
+    "dev:ai-agent": "parcel src/ai-agent.html --open",
+    "clean": "rm -rf .parcel-cache docs/fullstack docs/ai-agent",
+    "build": "npm run clean && npm run build:fullstack && npm run build:ai-agent",
+    "build:fullstack": "parcel build src/fullstack.html --dist-dir docs/fullstack --public-url ./ --no-cache",
+    "build:ai-agent": "parcel build src/ai-agent.html --dist-dir docs/ai-agent --public-url ./ --no-cache"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",

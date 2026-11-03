@@ -94,6 +94,41 @@
             </section>
 
             <section class="projects">
+                <h2>个人项目</h2>
+                <ol>
+                    <li>
+                        <header>
+                            <h3>喵喵监控平台</h3><a class="project-link" href="http://47.117.33.215:8000/" target="_blank"
+                                rel="noopener">线上地址：http://47.117.33.215:8000/</a>
+                        </header>
+                        <main>
+                            <p class="stack">技术栈：<strong>React 19、TypeScript、NestJS、Kafka、ClickHouse、PostgreSQL、Web
+                                    Vitals、pnpm Monorepo、Turborepo、Docker Compose、GitHub Actions</strong></p>
+                            <p>独立设计并开发的面向 Web 与 Node.js 应用的监控平台，覆盖错误采集、性能指标上报、应用管理、事件查询和可视化展示。自研 Vanilla / React / Vue /
+                                Node.js 多端监控 SDK，浏览器端采集全局异常及框架级错误，并基于 Web Vitals 上报 FCP、LCP、CLS 等性能指标。</p>
+                            <p>数据链路采用高吞吐架构：DSN 接入服务将上报事件写入 Kafka，消费者按 500 条或 1 秒批量写入 ClickHouse，有效削峰；管理服务基于 JWT
+                                认证体系管理用户与应用，控制台提供总览、缺陷、性能、告警等页面，支持配置错误数量与性能规则并触发邮件告警。</p>
+                        </main>
+                    </li>
+                    <li>
+                        <header>
+                            <h3>喵喵 AI Flow（AI 工作流引擎）</h3><a class="project-link" href="http://47.117.33.215:3005/"
+                                target="_blank" rel="noopener">线上地址：http://47.117.33.215:3005/</a>
+                        </header>
+                        <main>
+                            <p class="stack">技术栈：<strong>Next.js 16、React 19、NestJS、LangChain /
+                                    LangGraph、Ollama、Qdrant、Prisma 7、PostgreSQL、pnpm Monorepo、Turborepo、GitHub
+                                    Actions</strong></p>
+                            <p>独立设计并开发的 AI 工作流引擎，前端以可视化画布编排 AI 工作流，并支持知识库管理与知识库问答。共享 AI 引擎基于 LangChain / LangGraph 接入
+                                Ollama 本地大模型，配合 Qdrant 向量检索实现 RAG 问答能力。</p>
+                            <p>采用 pnpm Monorepo + Turbo 组织 workflow 前端（Next.js + Prisma）与 NestJS API 服务，统一构建与类型检查；通过
+                                Docker Compose 编排 PostgreSQL 与 Qdrant，并配置 GitHub Actions CI/CD
+                                与环境变量统一加载机制，完成从需求、开发到线上部署的全栈闭环。</p>
+                        </main>
+                    </li>
+                </ol>
+            </section>
+            <section class="projects">
                 <h2>项目经历</h2>
                 <ol>
                     <li>
